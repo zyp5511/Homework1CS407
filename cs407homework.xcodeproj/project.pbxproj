@@ -14,6 +14,8 @@
 		FB636FD21C769C8E0036C7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB636FD01C769C8E0036C7AA /* LaunchScreen.storyboard */; };
 		FB636FDD1C769C8E0036C7AA /* cs407homeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB636FDC1C769C8E0036C7AA /* cs407homeworkTests.swift */; };
 		FB636FE81C769C8E0036C7AA /* cs407homeworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB636FE71C769C8E0036C7AA /* cs407homeworkUITests.swift */; };
+		FB636FF61C769CAE0036C7AA /* secondViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB636FF51C769CAE0036C7AA /* secondViewcontroller.swift */; };
+		FB636FF81C76A5C80036C7AA /* thirdViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB636FF71C76A5C80036C7AA /* thirdViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FB636FE31C769C8E0036C7AA /* cs407homeworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cs407homeworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB636FE71C769C8E0036C7AA /* cs407homeworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cs407homeworkUITests.swift; sourceTree = "<group>"; };
 		FB636FE91C769C8E0036C7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB636FF51C769CAE0036C7AA /* secondViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = secondViewcontroller.swift; path = ../secondViewcontroller.swift; sourceTree = "<group>"; };
+		FB636FF71C76A5C80036C7AA /* thirdViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		FB636FC61C769C8E0036C7AA /* cs407homework */ = {
 			isa = PBXGroup;
 			children = (
+				FB636FF71C76A5C80036C7AA /* thirdViewcontroller.swift */,
+				FB636FF51C769CAE0036C7AA /* secondViewcontroller.swift */,
 				FB636FC71C769C8E0036C7AA /* AppDelegate.swift */,
 				FB636FC91C769C8E0036C7AA /* ViewController.swift */,
 				FB636FCB1C769C8E0036C7AA /* Main.storyboard */,
@@ -258,6 +264,8 @@
 			files = (
 				FB636FCA1C769C8E0036C7AA /* ViewController.swift in Sources */,
 				FB636FC81C769C8E0036C7AA /* AppDelegate.swift in Sources */,
+				FB636FF81C76A5C80036C7AA /* thirdViewcontroller.swift in Sources */,
+				FB636FF61C769CAE0036C7AA /* secondViewcontroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
