@@ -35,10 +35,9 @@ class fifthViewcontroller: UIViewController {
     
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let DestViewController : ViewController = segue.destinationViewController as! ViewController
-        DestViewController.answer.removeAll()
-    }
+    @IBAction func reStartBtn(){
+        self.navigationController?.popToRootViewControllerAnimated( true );
     
+    }
     
 }

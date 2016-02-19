@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z4Y-fd-ifw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -21,7 +21,8 @@
                                 <rect key="frame" x="206" y="360" width="188" height="116"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="Ykf-jd-UYh"/>
+                                    <constraint firstAttribute="height" constant="116" id="bPm-7G-O3v"/>
+                                    <constraint firstAttribute="width" constant="188" id="o5h-VM-f9s"/>
                                 </constraints>
                                 <state key="normal" title="StartQuiz"/>
                                 <connections>
@@ -43,20 +44,20 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IXN-4X-hYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27j-WL-sSQ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IXN-4X-hYC" secondAttribute="bottom" constant="124" id="707-rK-hr4"/>
-                            <constraint firstItem="4Es-8R-FeY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="211" id="Ctm-NF-eFt"/>
-                            <constraint firstItem="4Es-8R-FeY" firstAttribute="centerX" secondItem="IXN-4X-hYC" secondAttribute="centerX" id="WDJ-mY-jhY"/>
-                            <constraint firstItem="IXN-4X-hYC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="340" id="eJa-cV-N3E"/>
+                            <constraint firstItem="IXN-4X-hYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="00p-Ff-EqB"/>
+                            <constraint firstItem="4Es-8R-FeY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="167" id="Ctm-NF-eFt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IXN-4X-hYC" secondAttribute="bottom" constant="124" id="byh-d7-x0b"/>
+                            <constraint firstItem="IXN-4X-hYC" firstAttribute="centerX" secondItem="4Es-8R-FeY" secondAttribute="centerX" id="gWb-lt-X47"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aV1-6P-6nz"/>
                     <connections>
                         <outlet property="welcome" destination="4Es-8R-FeY" id="ryo-iH-Sjx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="306"/>
+            <point key="canvasLocation" x="1026" y="306"/>
         </scene>
         <!--Second Viewcontroller-->
         <scene sceneID="BvG-x6-3Aq">
@@ -127,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fiE-eK-UMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="315"/>
+            <point key="canvasLocation" x="1731" y="315"/>
         </scene>
         <!--Third Viewcontroller-->
         <scene sceneID="f6E-Kw-ghf">
@@ -185,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHG-vY-bzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689" y="330"/>
+            <point key="canvasLocation" x="2419" y="315"/>
         </scene>
         <!--Fourth Viewcontroller-->
         <scene sceneID="k9R-Q4-FOA">
@@ -246,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuA-3s-sgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2355" y="325"/>
+            <point key="canvasLocation" x="3167" y="325"/>
         </scene>
         <!--Fifth Viewcontroller-->
         <scene sceneID="srD-de-JAb">
@@ -276,7 +277,7 @@
                                 <animations/>
                                 <state key="normal" title="ReStart"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="fYz-Dm-IYe"/>
+                                    <action selector="reStartBtn" destination="vJN-nz-HCD" eventType="touchUpInside" id="Bt4-fa-NYh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -295,7 +296,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LlB-tV-11j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3034" y="315"/>
+            <point key="canvasLocation" x="3846" y="315"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sqA-p9-5aJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z4Y-fd-ifw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="txD-pH-FcA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ub3-cy-JSL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TG5-qM-QJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="306"/>
         </scene>
     </scenes>
 </document>
