@@ -124,9 +124,43 @@
                     <view key="view" contentMode="scaleToFill" id="a4r-WT-K43" customClass="GLKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rU-DA-11m">
+                                <rect key="frame" x="279" y="184" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7v-uc-bdA">
+                                <rect key="frame" x="251" y="285" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="heo-2B-cho"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rY-DK-CL0">
+                                <rect key="frame" x="252" y="419" width="94" height="30"/>
+                                <animations/>
+                                <state key="normal" title="NextQuestion"/>
+                            </button>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V6r-eS-vrY" firstAttribute="top" secondItem="7rU-DA-11m" secondAttribute="bottom" constant="395" id="B4a-cc-oLE"/>
+                            <constraint firstItem="7rU-DA-11m" firstAttribute="centerX" secondItem="a4r-WT-K43" secondAttribute="centerX" id="Gol-cX-OIm"/>
+                            <constraint firstItem="G7v-uc-bdA" firstAttribute="centerX" secondItem="7rU-DA-11m" secondAttribute="centerX" id="iAc-Ef-Z8G"/>
+                            <constraint firstItem="7rU-DA-11m" firstAttribute="top" secondItem="Sob-0R-42G" secondAttribute="bottom" constant="164" id="wgD-JJ-pDV"/>
+                            <constraint firstItem="G7v-uc-bdA" firstAttribute="centerY" secondItem="a4r-WT-K43" secondAttribute="centerY" id="zrr-aZ-7me"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TextField" destination="G7v-uc-bdA" id="rc7-n0-8ag"/>
+                        <outlet property="question2" destination="7rU-DA-11m" id="yfu-VH-iOi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHG-vY-bzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

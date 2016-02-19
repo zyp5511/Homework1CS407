@@ -101,8 +101,8 @@
 		FB636FC61C769C8E0036C7AA /* cs407homework */ = {
 			isa = PBXGroup;
 			children = (
-				FB636FF71C76A5C80036C7AA /* thirdViewcontroller.swift */,
 				FB636FF51C769CAE0036C7AA /* secondViewcontroller.swift */,
+				FB636FF71C76A5C80036C7AA /* thirdViewcontroller.swift */,
 				FB636FC71C769C8E0036C7AA /* AppDelegate.swift */,
 				FB636FC91C769C8E0036C7AA /* ViewController.swift */,
 				FB636FCB1C769C8E0036C7AA /* Main.storyboard */,
@@ -490,6 +490,7 @@
 				FB636FEE1C769C8E0036C7AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB636FEF1C769C8E0036C7AA /* Build configuration list for PBXNativeTarget "cs407homeworkTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +499,7 @@
 				FB636FF11C769C8E0036C7AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB636FF21C769C8E0036C7AA /* Build configuration list for PBXNativeTarget "cs407homeworkUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +508,7 @@
 				FB636FF41C769C8E0036C7AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

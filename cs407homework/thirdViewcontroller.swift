@@ -11,27 +11,17 @@ import UIKit
 
 class thirdViewcontroller: UIViewController {
     
-    @IBOutlet var question1 :UILabel!
-    
-    @IBOutlet var Photo: UIImageView!
+    @IBOutlet var question2 :UILabel!
+ 
     @IBOutlet var TextField : UITextField!
+    
+    var answer = String ();
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.Photo.image = UIImage(named: "pikachu_s_shadow_wallpaper_by_cmanciecko-d7nomi9")
-        self.question1.text = "Q1: What is it ? \n A. Jigglypuff   B.Pikachu"
+        self.question2.text = answer
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    @IBAction func nextQuesBtn(sender: AnyObject) { self.performSegueWithIdentifier("TwotoThree", sender: self)
-        
-    }
-    
+
 }

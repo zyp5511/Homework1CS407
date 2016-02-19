@@ -28,9 +28,8 @@ class secondViewcontroller: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func nextQuesBtn(sender: AnyObject) { self.performSegueWithIdentifier("TwotoThree", sender: self)
-        
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let DestViewController : thirdViewcontroller = segue.destinationViewController as! thirdViewcontroller
+        DestViewController.answer = TextField.text!
     }
-    
 }
