@@ -28,9 +28,13 @@
                                     <segue destination="Qk1-kl-2NA" kind="show" id="KEX-jZ-FFF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Es-8R-FeY">
-                                <rect key="frame" x="279" y="223" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Es-8R-FeY">
+                                <rect key="frame" x="134" y="231" width="332" height="21"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3cR-F4-Oc1"/>
+                                    <constraint firstAttribute="width" constant="332" id="Vvo-Jl-U2I"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -41,9 +45,14 @@
                         <constraints>
                             <constraint firstItem="IXN-4X-hYC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="27j-WL-sSQ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IXN-4X-hYC" secondAttribute="bottom" constant="124" id="707-rK-hr4"/>
+                            <constraint firstItem="4Es-8R-FeY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="211" id="Ctm-NF-eFt"/>
+                            <constraint firstItem="4Es-8R-FeY" firstAttribute="centerX" secondItem="IXN-4X-hYC" secondAttribute="centerX" id="WDJ-mY-jhY"/>
                             <constraint firstItem="IXN-4X-hYC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="340" id="eJa-cV-N3E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcome" destination="4Es-8R-FeY" id="ryo-iH-Sjx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,9 +200,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq0-mh-PkA">
-                                <rect key="frame" x="277" y="355" width="46" height="30"/>
+                                <rect key="frame" x="261" y="355" width="78" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="GoToResult"/>
                                 <connections>
                                     <segue destination="vJN-nz-HCD" kind="show" id="gyc-QV-1LI"/>
                                 </connections>
@@ -251,18 +260,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6a-jl-YDM">
-                                <rect key="frame" x="279" y="175" width="42" height="21"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="l4F-aB-TJY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoJ-mz-gfa">
-                                <rect key="frame" x="263" y="341" width="74" height="34"/>
+                                <rect key="frame" x="263" y="412" width="74" height="34"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="74" id="aPV-hS-mU9"/>
@@ -273,14 +272,24 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="fYz-Dm-IYe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6a-jl-YDM">
+                                <rect key="frame" x="215" y="250" width="170" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="l4F-aB-TJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="X6a-jl-YDM" firstAttribute="centerX" secondItem="SoJ-mz-gfa" secondAttribute="centerX" id="4p3-6c-cvW"/>
-                            <constraint firstItem="wCD-3W-Zz7" firstAttribute="top" secondItem="SoJ-mz-gfa" secondAttribute="bottom" constant="225" id="5JQ-Yz-PhH"/>
+                            <constraint firstItem="wCD-3W-Zz7" firstAttribute="top" secondItem="SoJ-mz-gfa" secondAttribute="bottom" constant="154" id="5JQ-Yz-PhH"/>
                             <constraint firstItem="X6a-jl-YDM" firstAttribute="centerX" secondItem="pFQ-Rk-Vby" secondAttribute="centerX" id="al7-8y-5VU"/>
-                            <constraint firstItem="X6a-jl-YDM" firstAttribute="top" secondItem="dhl-Zh-Hlk" secondAttribute="bottom" constant="155" id="vAx-Lp-7sM"/>
+                            <constraint firstItem="X6a-jl-YDM" firstAttribute="top" secondItem="dhl-Zh-Hlk" secondAttribute="bottom" constant="230" id="vAx-Lp-7sM"/>
                         </constraints>
                     </view>
                     <connections>

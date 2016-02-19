@@ -16,19 +16,18 @@ class fifthViewcontroller: UIViewController {
     var correct : Int = 0;
     
     var answer:[String] = [String]();
-    var correctAnswer:[String] = [String](arrayLiteral: "Pikachu","orange","2");
+
     
     override func viewDidLoad() {
+    let correctAnswer:[String] = [String](arrayLiteral: "Pikachu","blue","2");
         correct = checkAnswer (correctAnswer, answers: answer)
-        self.summary.text = "Congratuation you finish the Useless quiz! your score is " + String(correct)
+        self.summary.text = "Congratuation you have finished the Useless quiz! \n your score is " + String(correct)
         
     }
     func checkAnswer(correctAnswers:[String],answers:[String])-> Int {
     var correct : Int = 0
-        var index: Int
-        let size: Int = correctAnswers.count
-        for index = 0; index < size; ++index {
-            if ( correctAnswers[index] == answers[index]){
+    for (index, element) in answers.enumerate() {
+            if ( correctAnswers[index] == element ){
                 correct = correct + 1;
             }
         }
@@ -36,6 +35,10 @@ class fifthViewcontroller: UIViewController {
     
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let DestViewController : ViewController = segue.destinationViewController as! ViewController
+        DestViewController.answer.removeAll()
+    }
     
     
 }
