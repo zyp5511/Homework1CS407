@@ -30,6 +30,6 @@ class secondViewcontroller: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : thirdViewcontroller = segue.destinationViewController as! thirdViewcontroller
-        DestViewController.answer = TextField.text!
+        DestViewController.answer.append(TextField.text!)
     }
 }

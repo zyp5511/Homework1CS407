@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var welcome :UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.welcome.text = "Welcome to Useless Quiz 101"
     }
 
     override func didReceiveMemoryWarning() {
