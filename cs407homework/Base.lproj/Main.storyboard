@@ -199,23 +199,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq0-mh-PkA">
-                                <rect key="frame" x="261" y="355" width="78" height="30"/>
-                                <animations/>
-                                <state key="normal" title="GoToResult"/>
-                                <connections>
-                                    <segue destination="vJN-nz-HCD" kind="show" id="gyc-QV-1LI"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwN-Kr-A89">
-                                <rect key="frame" x="252" y="253" width="97" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="9iA-7y-6VK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09Q-RA-KWB">
                                 <rect key="frame" x="231" y="136" width="138" height="33"/>
                                 <animations/>
@@ -227,6 +210,23 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwN-Kr-A89">
+                                <rect key="frame" x="252" y="253" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="9iA-7y-6VK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq0-mh-PkA">
+                                <rect key="frame" x="261" y="355" width="78" height="30"/>
+                                <animations/>
+                                <state key="normal" title="GoToResult"/>
+                                <connections>
+                                    <segue destination="vJN-nz-HCD" kind="show" id="gyc-QV-1LI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -260,36 +260,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoJ-mz-gfa">
-                                <rect key="frame" x="263" y="412" width="74" height="34"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6a-jl-YDM">
+                                <rect key="frame" x="215" y="245" width="170" height="100"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="aPV-hS-mU9"/>
-                                    <constraint firstAttribute="height" constant="34" id="s67-nu-QZo"/>
-                                </constraints>
-                                <state key="normal" title="ReStart"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="fYz-Dm-IYe"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6a-jl-YDM">
-                                <rect key="frame" x="215" y="250" width="170" height="100"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="l4F-aB-TJY"/>
+                                    <constraint firstAttribute="height" constant="100" id="LPt-Gz-8mq"/>
+                                    <constraint firstAttribute="width" constant="170" id="fnQ-OT-3UT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoJ-mz-gfa">
+                                <rect key="frame" x="274" y="413" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="ReStart"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fYz-Dm-IYe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="X6a-jl-YDM" firstAttribute="centerX" secondItem="SoJ-mz-gfa" secondAttribute="centerX" id="4p3-6c-cvW"/>
-                            <constraint firstItem="wCD-3W-Zz7" firstAttribute="top" secondItem="SoJ-mz-gfa" secondAttribute="bottom" constant="154" id="5JQ-Yz-PhH"/>
-                            <constraint firstItem="X6a-jl-YDM" firstAttribute="centerX" secondItem="pFQ-Rk-Vby" secondAttribute="centerX" id="al7-8y-5VU"/>
-                            <constraint firstItem="X6a-jl-YDM" firstAttribute="top" secondItem="dhl-Zh-Hlk" secondAttribute="bottom" constant="230" id="vAx-Lp-7sM"/>
+                            <constraint firstItem="SoJ-mz-gfa" firstAttribute="top" secondItem="X6a-jl-YDM" secondAttribute="bottom" constant="68" id="I15-z4-bMv"/>
+                            <constraint firstItem="X6a-jl-YDM" firstAttribute="top" secondItem="dhl-Zh-Hlk" secondAttribute="bottom" constant="225" id="MDr-gP-sZ5"/>
+                            <constraint firstItem="X6a-jl-YDM" firstAttribute="centerX" secondItem="pFQ-Rk-Vby" secondAttribute="centerX" id="aU5-WA-4aE"/>
+                            <constraint firstItem="X6a-jl-YDM" firstAttribute="centerX" secondItem="SoJ-mz-gfa" secondAttribute="centerX" id="bBj-ML-pCa"/>
                         </constraints>
                     </view>
                     <connections>

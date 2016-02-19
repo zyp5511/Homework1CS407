@@ -27,7 +27,8 @@ class fourthViewcontroller: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : fifthViewcontroller = segue.destinationViewController as! fifthViewcontroller
-        DestViewController.answer.append(TextField.text!)
+        answer.append(TextField.text!)
+        DestViewController.answer=self.answer
     }
     
     
